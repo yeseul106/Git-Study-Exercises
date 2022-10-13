@@ -37,7 +37,7 @@ case $taskBranch in
     ;;
     "week3") switchTaskBarnch week3/reset-and-revert
     ;;
-    "week4") switchTaskBarnch week3/reset-and-revert
+    "week4") switchTaskBarnch week4
     ;;
     "") echo "과제 주차를 입력해주세요. ex week2"
     ;;
