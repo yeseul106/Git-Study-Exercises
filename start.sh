@@ -2,7 +2,7 @@
 
 currentBranch=$(git rev-parse --abbrev-ref HEAD)
 taskBranch=$1
-
+git remote add upstream https://github.com/jinsu4755/Git-Study-Exercises.git
 validateTaskBranch() {
     if [ $(git branch -r | grep -w -c "${1}") -eq 0 ]
     then
@@ -28,7 +28,7 @@ switchTaskBarnch() {
         git branch $1
     fi
     git checkout $1
-    git pull origin $1
+    git pull upstream $1
     bash ./task.sh
 }
 
